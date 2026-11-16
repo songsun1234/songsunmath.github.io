@@ -5,15 +5,24 @@
 @media(max-width:760px){.wrap{width:min(100% - 36px,920px)}.topbar-inner{min-height:60px}.menu-button{display:block}.topnav{display:none;position:absolute;left:18px;right:18px;top:60px;background:#fff;border:1px solid var(--line);border-radius:8px;padding:12px;box-shadow:0 10px 30px rgba(0,0,0,.08)}.topnav.open{display:grid;gap:4px}.topnav a{padding:8px}.hero{padding:50px 0}.hero-grid{grid-template-columns:1fr;gap:30px}.hero-contact{border-left:0;border-top:1px solid var(--line);padding:20px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:18px}.hero-contact p{margin:0}.content{padding-top:48px}.student-list{grid-template-columns:1fr}.event-toolbar{align-items:stretch;flex-direction:column}.event-search input{width:100%}}
 @media(max-width:520px){.hero h1{font-size:46px}.hero .cn{display:block;margin-top:8px;font-size:24px}.timeline-row{grid-template-columns:1fr;gap:2px}.research-links{grid-template-columns:1fr}.resource-top{display:block}.resource-type{display:block;margin-top:3px}.event-year{grid-template-columns:1fr;gap:10px}.hero-contact{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style></head>
-<body><a class="skip-link" href="#main">Skip to main content</a>
-<header class="topbar">
+
+/* Compact layout for the multi-page academic site. */
+.page-shell{padding-top:70px;min-height:55vh}
+.page-shell>.section{border-bottom:0;margin-bottom:0}
+.page-shell .section-heading{margin-bottom:30px}
+.student-rows{display:block}
+.student-single{display:flex;align-items:baseline;gap:12px;padding:11px 0;line-height:1.55;flex-wrap:wrap}
+.student-single>a,.student-single>.student-name{font-weight:600;white-space:nowrap}
+.student-single .student-degree{font-size:13px;white-space:nowrap}
+.student-single .student-status{font-size:13px;color:var(--muted)}
+.home-activities{padding-top:1px}
+.home-activities .activities{margin-top:0}
+@media(max-width:640px){.page-shell{padding-top:46px}.student-single{gap:5px 11px}}
+</style></head><body><a class="skip-link" href="#main">Skip to main content</a><header class="topbar">
   <div class="wrap topbar-inner">
     <a class="brand" href="#top">Song Sun</a>
     <button class="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
-    <nav class="topnav" id="primary-nav" aria-label="Primary navigation">
-      <a href="#experience">About</a><a href="#research">Research</a><a href="#teaching">Teaching</a><a href="#students">Students</a><a href="#events">Events</a><a href="#activities">Activities</a>
-    </nav>
+    <nav class="topnav" id="primary-nav" aria-label="Primary navigation"><a href="index.html">Home</a><a href="research.html">Research</a><a href="teaching.html">Teaching</a><a href="students.html">PhD Students</a><a href="events.html">Events</a></nav>
   </div>
 </header>
 <section class="hero" id="top">
@@ -29,9 +38,8 @@
       <p><strong>Address</strong>IASM, Zhejiang University<br>Hangzhou 310058, China</p>
     </aside>
   </div>
-</section><main id="main" class="wrap content" tabindex="-1">
-      <!-- ACADEMIC EXPERIENCE: one timeline-row per position or degree. -->
-      <section class="section" id="experience" aria-labelledby="experience-title">
+</section>
+<main id="main" class="wrap content" tabindex="-1"><section class="section" id="experience" aria-labelledby="experience-title">
         <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="experience-title">Academic experience</h2></div>
         <dl class="timeline">
           <div class="timeline-row"><dt>2002–2006</dt><dd>B.S. in Mathematics, <a href="https://en.scgy.ustc.edu.cn/">Special Class for the Gifted Young</a>, USTC</dd></div>
@@ -44,474 +52,27 @@
           <div class="timeline-row"><dt>2024–now</dt><dd>Professor, <a href="https://www.iasm.zju.edu.cn/iasm/main.htm">IASM</a></dd></div>
         </dl>
       </section>
-
-      <!-- TEACHING: this dated statement is preserved from the Google Site. -->
-      <section class="section" id="teaching" aria-labelledby="teaching-title">
-        <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="teaching-title">Teaching</h2></div>
-        <p class="teaching-note">I will not teach in Fall 2025.</p>
-      </section>
-
-      <!-- RESEARCH: edit the href on a link to replace a paper or slide URL. -->
-      <section class="section" id="research" aria-labelledby="research-title">
-        <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="research-title">Research</h2></div>
-        <div class="research-links">
-          <a class="research-link" href="https://mathscinet.ams.org/mathscinet/search/publications.html?Submit=Search&amp;arg3=&amp;co4=AND&amp;co5=AND&amp;co6=AND&amp;co7=AND&amp;dr=all&amp;pg4=AUCN&amp;pg5=TI&amp;pg6=PC&amp;pg7=ALLF&amp;pg8=ET&amp;review_format=html&amp;s4=sun%2C+song&amp;s5=&amp;s6=&amp;s7=&amp;s8=All&amp;yearRangeFirst=&amp;yearRangeSecond=&amp;yrop=eq"><span>Journal publications</span><strong>MathSciNet</strong><span class="external-arrow" aria-hidden="true">↗</span></a>
-          <a class="research-link" href="https://arxiv.org/search/advanced?abstracts=show&amp;advanced=&amp;classification-include_cross_list=include&amp;classification-mathematics=y&amp;classification-physics_archives=all&amp;date-date_type=submitted_date&amp;date-filter_by=all_dates&amp;date-from_date=&amp;date-to_date=&amp;date-year=&amp;order=-announced_date_first&amp;size=50&amp;terms-0-field=author&amp;terms-0-operator=AND&amp;terms-0-term=sun%2C+song"><span>Preprints</span><strong>arXiv</strong><span class="external-arrow" aria-hidden="true">↗</span></a>
-        </div>
-        <h3 class="resources-heading">Lecture notes, surveys, proceedings, slides, etc.</h3>
-        <ul class="resource-list">
-          <li class="resource">
-            <div class="resource-top"><a href="https://www.dropbox.com/scl/fi/v5p4izx3dvadlumnv9j5i/SanyaLN.pdf?dl=0&amp;rlkey=j0ven1gabbz3bizg0balqr2s9&amp;st=nskgx4an">Ricci curvature in Kahler geometry</a><span class="resource-type">Notes</span></div>
-            <p>Lecture notes for Sanya winter school in complex analysis and geometry, January 2016.</p>
-          </li>
-          <li class="resource">
-            <div class="resource-top"><a href="https://www.dropbox.com/scl/fi/f3c8xyjqmeak4ovvodhna/ICM.pdf?dl=0&amp;rlkey=hq5f0qn1b1x3stusm8n0vjx3v&amp;st=os33zstb">Degenerations and moduli spaces in Kahler geometry</a><span class="resource-type">Proceedings</span></div>
-            <p>Proceedings of ICM 2018, Rio de Janeiro.</p>
-          </li>
-          <li class="resource">
-            <div class="resource-top"><a href="https://www.dropbox.com/scl/fi/gnprventx50ek8l7roqct/SCM.pdf?dl=0&amp;rlkey=mdgpjnrhjck8cw1ge4x88fnhm&amp;st=yw7b6ucs">A note on the collapsing geometry of hyperKahler four manifolds</a><span class="resource-type">Article</span></div>
-            <p>Science China Mathematics, dedicated to Professor Lo Yang on the occasion of his 80th birthday.</p>
-          </li>
-          <li class="resource">
-            <div class="resource-top"><a href="https://www.dropbox.com/scl/fi/r28ody5olp15jh7wi092h/ICCM2019-proceedings.pdf?dl=0&amp;rlkey=bwjayp759mi2dg2s4r3hxdcmo&amp;st=2bd1iugp">Collapsing of Calabi-Yau metrics and degeneration of complex structures</a><span class="resource-type">Proceedings</span></div>
-            <p>Proceedings of ICCM 2019.</p>
-          </li>
-          <li class="resource">
-            <div class="resource-top"><a href="https://www.dropbox.com/scl/fi/1xzn57xpw6bqr866xgxqi/2021Oberwolfachslides.pdf?dl=0&amp;rlkey=lq4na2ymuv3f6ayk7wqmfm3lz&amp;st=jz5l2dd6">Collapsing geometry of hyperkahler four manifolds</a><span class="resource-type">Slides</span></div>
-            <p>Slides for a remote lecture given at Oberwolfach workshop in July 2021.</p>
-          </li>
-          <li class="resource">
-            <div class="resource-top"><a href="https://www.ams.org/journals/notices/202204/rnoti-p546.pdf">Geometry of Calabi-Yau metrics</a><span class="resource-type">Article</span></div>
-            <p>An article written for the Notices of the AMS.</p>
-          </li>
-          <li class="resource">
-            <div class="resource-top"><a href="https://www.dropbox.com/scl/fi/gp20zkci6kyul7i3n3w5a/Calabi100.pdf?dl=0&amp;rlkey=5p4yi24zqh0lqpyhy0ti628xl&amp;st=l7laucx5">Bubbling of Kahler-Einstein metrics</a><span class="resource-type">Slides</span></div>
-            <p>Slides for a talk given at Calabi’s 100th birthday conference in July 2023, Hefei.</p>
-          </li>
-          <li class="resource">
-            <div class="resource-top"><a href="https://www.dropbox.com/scl/fi/y3d2itwqed2gjtvv2h069/ICBS24.pdf?dl=0&amp;rlkey=35iq1w0tp78ogczubs9el8kt8&amp;st=mq3yskd6">Kahler-Einstein metrics</a><span class="resource-type">Slides</span></div>
-            <p>Slides for a talk given at the ICBS in July 2024, Beijing.</p>
-          </li>
-          <li class="resource">
-            <div class="resource-top"><a href="https://www.dropbox.com/scl/fi/ol8spui1xx9ve6zdp3bv9/2025HKU.pdf?dl=0&amp;rlkey=9q7vhv2yz8cg67nywcngth0yx&amp;st=rhwrg6x2">Geometry of gravitational instantons</a><span class="resource-type">Slides</span></div>
-            <p>Slides for the Frontiers of Mathematics Lecture in January 2025, Hong Kong University.</p>
-          </li>
-          <li class="resource">
-            <div class="resource-top"><a href="https://www.dropbox.com/scl/fi/czlmdukvhiog0jhp2jupo/SRI.pdf?dl=0&amp;rlkey=6ry854eusqm5j23xlun8xe1ga&amp;st=h5t2fe8x">Kahler-Ricci shrinkers and Fano fibrations</a><span class="resource-type">Slides</span></div>
-            <p>Slides for the talk given at the SRI 2025, Fort Collins.</p>
-          </li>
-        </ul>
-      </section>
-
-      <!-- STUDENTS: the positions below are as listed on the original site. -->
-      <section class="section" id="students" aria-labelledby="students-title">
-        <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 id="students-title">PhD students</h2></div>
-        <ul class="student-list">
-          <li class="student">
-            <div class="student-heading"><a href="https://www.math.uwaterloo.ca/~x67chen/">Xuemiao Chen</a><span class="student-degree">PhD 2019</span></div>
-            <p>Currently Assistant Professor at Waterloo</p>
-          </li>
-          <li class="student">
-            <div class="student-heading"><a href="https://sites.google.com/view/cifarellic">Charles Cifarelli</a><span class="student-degree">PhD 2021</span></div>
-            <p>Currently postdoc at Stony Brook</p>
-          </li>
-          <li class="student">
-            <div class="student-heading"><span class="student-name">Holly Mandel</span><span class="student-degree">PhD 2022</span></div>
-            <p>Currently working in industry</p>
-          </li>
-          <li class="student">
-            <div class="student-heading"><span class="student-name">Hongyi Liu</span><span class="student-degree">PhD 2023</span></div>
-            <p>Currently postdoc at Princeton</p>
-          </li>
-          <li class="student">
-            <div class="student-heading"><a href="https://sites.google.com/view/junsheng--zhang/home">Junsheng Zhang</a><span class="student-degree">PhD 2024</span></div>
-            <p>Currently postdoc at NYU</p>
-          </li>
-          <li class="student">
-            <div class="student-heading"><a href="https://yifanchen98.github.io/">Yifan Chen</a><span class="student-degree">PhD 2025</span></div>
-            <p>Currently postdoc at Rome</p>
-          </li>
-          <li class="student">
-            <div class="student-heading"><a href="https://sites.google.com/view/mingyangli">Mingyang Li</a><span class="student-degree">PhD 2025</span></div>
-            <p>Currently postdoc at SCGP, Stony Brook</p>
-          </li>
-          <li class="student">
-            <div class="student-heading"><a href="https://math.berkeley.edu/~esparza/">Carlos Esparza</a><span class="student-degree">UC Berkeley</span></div>
-            
-          </li>
-          <li class="student">
-            <div class="student-heading"><a href="https://math.berkeley.edu/~gmbrown/">Garrett Brown</a><span class="student-degree">UC Berkeley</span></div>
-            
-          </li>
-          <li class="student">
-            <div class="student-heading"><a href="https://fyqing.github.io/yueqing.com/">Yueqing Feng</a><span class="student-degree">UC Berkeley</span></div>
-            
-          </li>
-          <li class="student">
-            <div class="student-heading"><span class="student-name">Keshu Zhou</span><span class="student-degree">UC Berkeley</span></div>
-            
-          </li>
-        </ul>
-      </section>
-
-      <!-- EVENTS: all 54 entries are visible without JavaScript. -->
-      <section class="section" id="events" aria-labelledby="events-title">
-        <div class="section-heading"><span class="section-number" aria-hidden="true">05</span><h2 id="events-title">Events</h2></div>
-        <div class="event-toolbar">
-          <p class="archive-caption" id="event-count" role="status" aria-live="polite" aria-atomic="true">54 events · 2009–2025</p>
-          <div class="event-search" id="event-search" hidden>
-            <label for="event-query">Filter events by title, place, or year</label>
-            <input type="search" id="event-query" placeholder="e.g. geometry, London, 2025" aria-controls="event-archive" autocomplete="off">
-          </div>
-        </div>
-        <div id="event-archive">
-          <div class="event-year" data-year="2025">
-            <h3>2025</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://igp.ustc.edu.cn/111/list.htm">Symposium on Geometry at Large</a>
-                <p>Hefei<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2025</p>
-              </li>
-              <li class="event">
-                <a href="https://www.msri.org/programs/361">The 5th Symposium in Geometry and Differential Equations</a>
-                <p>Yantai<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2025</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2024">
-            <h3>2024</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://www.msri.org/programs/361">Special Geometric Structures and Analysis</a>
-                <p>MSRI<span aria-hidden="true"> · </span><span class="sr-only">, </span>Fall 2024</p>
-              </li>
-              <li class="event">
-                <a href="https://projects.au.dk/cmcg/aarhus-complex-geometry-workshop">Aarhus Complex Geometry Workshop</a>
-                <p>Aarhus<span aria-hidden="true"> · </span><span class="sr-only">, </span>June 2024</p>
-              </li>
-              <li class="event">
-                <a href="https://fsgde.casconf.cn/">The 4th Symposium in Geometry and Differential Equations</a>
-                <p>Hefei<span aria-hidden="true"> · </span><span class="sr-only">, </span>May 2024</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2023">
-            <h3>2023</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://2023prcsg.casconf.cn/">Pacific Rim Complex and Symplectic Geometry Conference</a>
-                <p>Lishui<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2023</p>
-              </li>
-              <li class="event">
-                <a href="https://calabi2023.casconf.cn/page/1627556153556865025">Symposium in Geometry-Celebrating the 100th birthday of E. Calabi</a>
-                <p>Hefei<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2023</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2022">
-            <h3>2022</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://sites.google.com/view/smcg2022/home">Special Metrics in Complex Geometry</a>
-                <p>Dallas<span aria-hidden="true"> · </span><span class="sr-only">, </span>May 2022</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2019">
-            <h3>2019</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://iccm2019.cn/">The Eighth International Congress of Chinese Mathematicians</a>
-                <p>Beijing<span aria-hidden="true"> · </span><span class="sr-only">, </span>June 2019</p>
-              </li>
-              <li class="event">
-                <a href="https://gde2019.csp.escience.cn/dct/page/1">The 3rd Symposium in Geometry and Differential Equations</a>
-                <p>Hefei<span aria-hidden="true"> · </span><span class="sr-only">, </span>May 2019</p>
-              </li>
-              <li class="event">
-                <a href="https://sites.duke.edu/scshgap/physics-and-special-holonomy-kitp-8-12-april-2019/">Physics and Special Holonomy</a>
-                <p>Santa Barbara<span aria-hidden="true"> · </span><span class="sr-only">, </span>April 2019</p>
-              </li>
-              <li class="event">
-                <a href="https://sites.duke.edu/scshgap/special-holonomy-algebraic-geometry-jan2019/">Special Holonomy and Algebraic Geometry</a>
-                <p>London<span aria-hidden="true"> · </span><span class="sr-only">, </span>January 2019</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2018">
-            <h3>2018</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://sites.duke.edu/scshgap/progress-and-open-problems-2018/">Special Holonomy: Progress and Open Problems</a>
-                <p>Stony Brook<span aria-hidden="true"> · </span><span class="sr-only">, </span>September 2018</p>
-              </li>
-              <li class="event">
-                <a href="https://www.icm2018.org/portal/en/">ICM 2018</a>
-                <p>Rio de Janeiro<span aria-hidden="true"> · </span><span class="sr-only">, </span>August 2018</p>
-              </li>
-              <li class="event">
-                <a href="https://gde2018.csp.escience.cn/dct/page/1">The 2nd Symposium in Geometry and Differential Equations</a>
-                <p>Shanghai<span aria-hidden="true"> · </span><span class="sr-only">, </span>June 2018</p>
-              </li>
-              <li class="event">
-                <a href="https://www.icms.org.uk/geometricanalysis.php">Geometric Analysis</a>
-                <p>Edinburgh<span aria-hidden="true"> · </span><span class="sr-only">, </span>May 2018</p>
-              </li>
-              <li class="event">
-                <a href="https://www.math.uci.edu/~scgas/scgas-2018/2018.php">The 25th Southern California Geometric Analysis Seminar</a>
-                <p>Irvine<span aria-hidden="true"> · </span><span class="sr-only">, </span>January 2018</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2017">
-            <h3>2017</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://sites.duke.edu/scshgap/progress-and-problems-2017/">Special Holonomy: Progress and Open Problems</a>
-                <p>Stony Brook<span aria-hidden="true"> · </span><span class="sr-only">, </span>September 2017</p>
-              </li>
-              <li class="event">
-                <a href="https://www.newton.ac.uk/event/sygw05">Symplectic geometry-celebrating the work of Simon Donaldson</a>
-                <p>Cambridge<span aria-hidden="true"> · </span><span class="sr-only">, </span>August 2017</p>
-              </li>
-              <li class="event">
-                <a href="https://ricerca.mat.uniroma3.it/users/codogni/moduliconference">Moduli of K-stable varieties</a>
-                <p>Rome<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2017</p>
-              </li>
-              <li class="event">
-                <a href="https://2017gde.csp.escience.cn/dct/page/1">Symposium in geometry and differential equations</a>
-                <p>Beijing<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2017</p>
-              </li>
-              <li class="event">
-                <a href="https://www3.nd.edu/~cmnd/programs/cmnd2017/conference/index.html">Current Developments and New Directions in Kahler Geometry</a>
-                <p>Notre Dame<span aria-hidden="true"> · </span><span class="sr-only">, </span>June 2017</p>
-              </li>
-              <li class="event">
-                <a href="https://sites.duke.edu/scshgap/compact-exceptional-holonomy-spaces-5jun17/">Constructions of Compact Exceptional Holonomy Spaces: Past, Present and Future</a>
-                <p>London<span aria-hidden="true"> · </span><span class="sr-only">, </span>June 2017</p>
-              </li>
-              <li class="event">
-                <a href="https://sites.duke.edu/scshgap/collapsed-holonomy-spaces-9jan17/">Collapse, Adiabatic Limits and Special Holonomy</a>
-                <p>London<span aria-hidden="true"> · </span><span class="sr-only">, </span>January 2017</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2016">
-            <h3>2016</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://scgp.stonybrook.edu/archives/19735">Simons Collaboration on Special Holonomy Inaugural Conference</a>
-                <p>Simons Center<span aria-hidden="true"> · </span><span class="sr-only">, </span>September 2016</p>
-              </li>
-              <li class="event">
-                <a href="https://www.claymath.org/events/algebraic-geometry-old-and-new">Algebraic Geometry: Old and New</a>
-                <p>Oxford<span aria-hidden="true"> · </span><span class="sr-only">, </span>September 2016</p>
-              </li>
-              <li class="event">
-                <a href="https://www.crm.umontreal.ca/2016/LeBrunFest16/index_e.php">Conference in Differential Geometry-Celebrating Claude LeBrun’s 60th birthday</a>
-                <p>Montreal<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2016</p>
-              </li>
-              <li class="event">
-                <a href="https://www.mfo.de/occasion/1623/www_view">Geometrie</a>
-                <p>Oberwolfach<span aria-hidden="true"> · </span><span class="sr-only">, </span>June 2016</p>
-              </li>
-              <li class="event">
-                <a href="https://e-scv.fmf.uni-lj.si/index.php/activities/conferences-and-schools/132-sanya-school">Sanya school in complex analysis and geometry</a>
-                <p>Sanya<span aria-hidden="true"> · </span><span class="sr-only">, </span>January 2016</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2015">
-            <h3>2015</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://scgp.stonybrook.edu/archives/14365">Riemannian convergence theory</a>
-                <p>Simons Center<span aria-hidden="true"> · </span><span class="sr-only">, </span>November 2015</p>
-              </li>
-              <li class="event">
-                <a href="https://scgp.stonybrook.edu/archives/10866">Moduli spaces and singularities in algebraic and Riemannian geometry</a>
-                <p>Simons Center<span aria-hidden="true"> · </span><span class="sr-only">, </span>Fall 2015</p>
-              </li>
-              <li class="event">
-                <a href="https://sites.google.com/site/2015summerinstitute/home/july-13-17">Algebraic geometry 2015</a>
-                <p>Salt Lake City<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2015</p>
-              </li>
-              <li class="event">
-                <a href="https://sites.math.northwestern.edu/emphasisGA/ricci/">Workshop on Ricci curvature</a>
-                <p>Evanston<span aria-hidden="true"> · </span><span class="sr-only">, </span>May 2015</p>
-              </li>
-              <li class="event">
-                <a href="https://math.vanderbilt.edu/dept/conf/kahlergeometry/index.php">Recent Advances in Kahler geometry</a>
-                <p>Nashville<span aria-hidden="true"> · </span><span class="sr-only">, </span>May 2015</p>
-              </li>
-              <li class="event">
-                <a href="https://www.agneshome.org/boston-college-2015">Algebraic Geometry Northeastern Series (AGNES)</a>
-                <p>Boston<span aria-hidden="true"> · </span><span class="sr-only">, </span>March 2015</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2014">
-            <h3>2014</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://www.ms.u-tokyo.ac.jp/~afutaki/TIMG2014/TIMG2014_Home.html">Trends in Modern Geometry</a>
-                <p>Tokyo<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2014</p>
-              </li>
-              <li class="event">
-                <a href="https://www.math.stonybrook.edu/geomfest14/">29th Geometry Festival</a>
-                <p>Stony Brook<span aria-hidden="true"> · </span><span class="sr-only">, </span>April 2014</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2013">
-            <h3>2013</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://www.math.stonybrook.edu/AlgebraicGeometry/Kstability.html">Mini-school on K-stability</a>
-                <p>Stony Brook<span aria-hidden="true"> · </span><span class="sr-only">, </span>Dec 2013</p>
-              </li>
-              <li class="event">
-                <a href="https://iccm.tims.ntu.edu.tw/">The sixth International Congress of Chinese Mathematicians</a>
-                <p>Taipei<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2013</p>
-              </li>
-              <li class="event">
-                <a href="https://www.mfo.de/occasion/1327/www_view">Differentialgeometrie im Grossen</a>
-                <p>Oberwolfach<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2013</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2012">
-            <h3>2012</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://www.ihp.fr/ckgeom/index.html">Recent Developments in Kahler geometry</a>
-                <p>IHP Paris<span aria-hidden="true"> · </span><span class="sr-only">, </span>December 2012</p>
-              </li>
-              <li class="event">
-                <a href="https://www.math.sci.osaka-u.ac.jp/~mabuchi/cnf/sugadaira18.html">The 18th International Symposium on Complex Geometry</a>
-                <p>Sugadaira<span aria-hidden="true"> · </span><span class="sr-only">, </span>October 2012</p>
-              </li>
-              <li class="event">
-                <a href="https://www.uv.es/~poincare/GF%26GS2012/Workshop_GF%26GS/Welcome_GF%26GS.html">Workshop on Geometric flows and Geometric structures</a>
-                <p>Valencia<span aria-hidden="true"> · </span><span class="sr-only">, </span>September 2012</p>
-              </li>
-              <li class="event">
-                <a href="https://www.crm.umontreal.ca/2012/Metrics12/horaire_e.html">Workshop on Manifolds of Metrics and Probabilistic Methods in Geometry and Analysis</a>
-                <p>Montreal<span aria-hidden="true"> · </span><span class="sr-only">, </span>July 2012</p>
-              </li>
-              <li class="event">
-                <a href="https://indico.ictp.it/event/a11168/other-view?view=ictptimetable">Conference in geometric analysis</a>
-                <p>Trieste<span aria-hidden="true"> · </span><span class="sr-only">, </span>June 2012</p>
-              </li>
-              <li class="event">
-                <a href="https://bogomolov-lab.ru/NANTES/">Geometry of Kahler manifolds</a>
-                <p>Nantes<span aria-hidden="true"> · </span><span class="sr-only">, </span>May 2012</p>
-              </li>
-              <li class="event">
-                <a href="https://sms.cam.ac.uk/collection/1243544">Workshop on Kahler geometry</a>
-                <p>Cambridge<span aria-hidden="true"> · </span><span class="sr-only">, </span>April 2012</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2011">
-            <h3>2011</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://www.msri.org/workshops/593">Chern Centennial Conference</a>
-                <p>Berkeley<span aria-hidden="true"> · </span><span class="sr-only">, </span>November 2011</p>
-              </li>
-              <li class="event">
-                <a href="https://bogomolov-lab.ru/GS/">Geometric structures on complex manifolds</a>
-                <p>Moscow<span aria-hidden="true"> · </span><span class="sr-only">, </span>October 2011</p>
-              </li>
-              <li class="event">
-                <a href="https://workshop.kias.re.kr/PRCCG2011/?Program=">6th Pacific Rim Complex and Symplectic Geometry conference</a>
-                <p>Gyung-Ju<span aria-hidden="true"> · </span><span class="sr-only">, </span>August 2011</p>
-              </li>
-              <li class="event">
-                <a href="https://science.unitn.it/cirm/cag2011.html">Complex analysis and geometry XX</a>
-                <p>Trento<span aria-hidden="true"> · </span><span class="sr-only">, </span>June 2011</p>
-              </li>
-              <li class="event">
-                <a href="https://scgp.stonybrook.edu/archives/134">Workshop on extremal Kahler metrics</a>
-                <p>Stony Brook<span aria-hidden="true"> · </span><span class="sr-only">, </span>March 2011</p>
-              </li>
-              <li class="event">
-                <a href="https://euro-math-soc.eu/event/mon-7-feb-11-0300/extremal-metrics-evolution-equations-and-stability">Extremal metrics: evolutions equations and stability</a>
-                <p>Marseille<span aria-hidden="true"> · </span><span class="sr-only">, </span>January 2011</p>
-              </li>
-            </ul>
-          </div>
-          <div class="event-year" data-year="2009">
-            <h3>2009</h3>
-            <ul class="event-list">
-              <li class="event">
-                <a href="https://www.birs.ca/events/2009/5-day-workshops/09w5027/participants">Extremal Kahler metrics</a>
-                <p>Banff<span aria-hidden="true"> · </span><span class="sr-only">, </span>June 2009</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <p class="no-results" id="no-results" hidden>No matching events. Clear the search to see the full archive.</p>
-      </section>
-
-      <!-- MATHEMATICAL ACTIVITIES: links from the bottom of the source page. -->
-      <section class="section" id="activities" aria-labelledby="activities-title">
-        <div class="section-heading"><span class="section-number" aria-hidden="true">06</span><h2 id="activities-title">Mathematical activities</h2></div>
+<section class="section home-activities" id="activities" aria-label="Useful links">
         <div class="activities">
           <a class="activity" href="https://zuma-talks.github.io/gt/index.html">Zhejiang University Math Activities (ZUMA)<small>Geometry and Topology</small><span class="external-arrow" aria-hidden="true">↗</span></a>
           <a class="activity" href="https://www.iasm.zju.edu.cn/iasm/birs/list.htm">IASM-BIRS<span class="external-arrow" aria-hidden="true">↗</span></a>
         </div>
       </section>
-      <footer class="site-footer">
+<footer class="site-footer">
         <p>Song Sun <span aria-hidden="true">·</span> <span lang="zh-Hans">孙崧</span></p>
         <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
-      </footer>
-    </main>
+      </footer></main>
 <script>
-    // Optional enhancement. All content and links work with JavaScript disabled.
-    (() => {
-      'use strict';
-      const input = document.getElementById('event-query');
-      const search = document.getElementById('event-search');
-      const status = document.getElementById('event-count');
-      const empty = document.getElementById('no-results');
-      const archive = document.getElementById('event-archive');
-      if (!input || !search || !status || !empty || !archive) return;
-
-      const normalize = (text) => text.normalize('NFD')
-        .replace(/[̀-ͯ]/g, '').toLocaleLowerCase()
-        .replace(/\s+/g, ' ').trim();
-      const entries = Array.from(archive.querySelectorAll('.event')).map((element) => ({
-        element, text: normalize(element.textContent || '')
-      }));
-      const years = Array.from(archive.querySelectorAll('.event-year'));
-      const dates = years.map((group) => Number(group.dataset.year)).filter(Number.isFinite);
-      const range = dates.length ? ` · ${Math.min(...dates)}–${Math.max(...dates)}` : '';
-      const update = () => {
-        const query = normalize(input.value);
-        const terms = query ? query.split(' ') : [];
-        let visible = 0;
-        for (const item of entries) {
-          const matches = terms.every((term) => item.text.includes(term));
-          item.element.hidden = !matches;
-          if (matches) visible += 1;
-        }
-        for (const year of years) {
-          year.hidden = !Array.from(year.querySelectorAll('.event')).some((event) => !event.hidden);
-        }
-        status.textContent = query
-          ? `${visible} of ${entries.length} events`
-          : `${entries.length} events${range}`;
-        empty.hidden = visible !== 0;
-      };
-      input.addEventListener('input', update);
-      input.addEventListener('search', update);
-      input.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') { input.value = ''; update(); }
-      });
-      search.hidden = false;
-      update();
-    })();
-  
-const menuButton=document.querySelector('.menu-button');const nav=document.getElementById('primary-nav');if(menuButton&&nav){menuButton.addEventListener('click',()=>{const open=nav.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));}</script></body></html>
+const menuButton=document.querySelector('.menu-button');
+const nav=document.getElementById('primary-nav');
+if(menuButton&&nav){
+  menuButton.addEventListener('click',()=>{
+    const open=nav.classList.toggle('open');
+    menuButton.setAttribute('aria-expanded',String(open));
+  });
+  nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{
+    nav.classList.remove('open');
+    menuButton.setAttribute('aria-expanded','false');
+  }));
+}
+</script></body></html>
